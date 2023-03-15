@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Test Form</title>
+    <link rel="stylesheet" href="formPharmacy.css">
+
+</head>
+
+<body>
+    <h2 class="text-centre text-primary">Patient Details</h2>
+    <form action="#" onsubmit="window.close()">
+        <div class="form-container">
+            <div class="lab-form">
+                <div class="sections">1. Your Contact Details</div>
+                <div class="form-main">
+                    <div class="form-group">
+                        <div class="input-box">
+                            <input type="text" class="textbox" name="fullname" placeholder="Full Name" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-box">
+                            <input type="text" class="textbox" name="PatientId" placeholder="Patient Id (If Exists)">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-box">
+                            <input type="tel" class="textbox" name="Contact" placeholder="Contact Number" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-box">
+                            <input type="email" class="textbox" name="Email" placeholder="Email Id" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sections">2. Address Details</div>
+                <div class="form-main">
+                    <div class="form-group">
+                        <div class="input-box">
+                            <input type="text" class="textbox" name="H-No" placeholder="House No." required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-box">
+                            <input type="text" class="textbox" name="Street" placeholder="Street" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-box">
+                            <input type="text" class="textbox" name="Area" placeholder="Area" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-box">
+                            <span id="dist">District</span>
+                            <select class="list">
+                                <option value="">Choose</option>
+                                <option value="Ajmer">Ajmer</option>
+                                <option value="Alwar">Alwar</option>
+                                <option value="Banswara">Banswara</option>
+                                <option value="Baran">Baran</option>
+                                <option value="Barmer">Barmer</option>
+                                <option value="Bharatpur">Bharatpur</option>
+                                <option value="Bhilwara">Bhilwara</option>
+                                <option value="Bikaner">Bikaner</option>
+                                <option value="Bundi">Bundi</option>
+                                <option value="Chittorgarh">Chittorgarh</option>
+                                <option value="Churu">Churu</option>
+                                <option value="Dausa">Dausa</option>
+                                <option value="Dholpur">Dholpur</option>
+                                <option value="Dungarpur">Dungarpur</option>
+                                <option value="Hanumangarh">Hanumangarh</option>
+                                <option value="Jaipur">Jaipur</option>
+                                <option value="Jaisalmer">Jaisalmer</option>
+                                <option value="Jalore">Jalore</option>
+                                <option value="Jhalawar">Jhalawar</option>
+                                <option value="Jhunjhunu">Jhunjhunu</option>
+                                <option value="Jodhpur">Jodhpur</option>
+                                <option value="Karauli">Karauli</option>
+                                <option value="Kota">Kota</option>
+                                <option value="Nagaur">Nagaur</option>
+                                <option value="Pali">Pali</option>
+                                <option value="Pratapgarh">Pratapgarh</option>
+                                <option value="Rajsamand">Rajsamand</option>
+                                <option value="Sawai Madhopur">Sawai Madhopur</option>
+                                <option value="Sikar">Sikar</option>
+                                <option value="Sirohi">Sirohi</option>
+                                <option value="Sri Ganganagar">Sri Ganganagar</option>
+                                <option value="Tonk">Tonk</option>
+                                <option value="Udaipur">Udaipur</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sections">3. Choose the Test Type :</div>
+                <p><h5>Choose atleast one test.</h5></p>
+                <div class="checkbox-wrapper">
+                    <label class="test-type">
+                        <input type="checkbox" id="CBC" name="CBC" value="CBC">
+                        <label for="CBC">CBC</label><br>
+                        <input type="checkbox" id="CompleteUrine" name="CompleteUrine" value="CompleteUrine">
+                        <label for="CompleteUrine">Complete Urine</label><br>
+                        <input type="checkbox" id="LipidProfile" name="LipidProfile" value="LipidProfile">
+                        <label for="LipidProfile">Lipid Profile</label><br>
+                        <input type="checkbox" id="TSH" name="TSH" value="TSH">
+                        <label for="TSH">Thyroid Stimulating Hormone</label><br>
+                        <input type="checkbox" id="GlucoseTest" name="GlucoseTest" value="GlucoseTest">
+                        <label for="GlucoseTest">Glucose Test</label><br>
+                </div>
+
+                <div class="sections">4. Report Type</div>
+                <div class="radio-wrapper">
+                    <input type="radio" id="html" name="type" value="hardcopy">
+                    <label for="hardcopy">Hard Copy</label><br>
+                    <input type="radio" id="html" name="type" value="softcopy">
+                    <label for="softcopy">Soft Copy</label><br>
+                </div>
+
+
+                <div class="sections">5. Select your Comfortable Time
+                </div>
+                <div class="input-box" id="date-time">
+                    <span class="labels">Date:</span>
+                    <input type="date" required>
+                </div>
+
+                <div class="input-box" id="date-time">
+                    <span class="labels">Time Slot:</span>
+                    <select class="list">
+                        <option value="dummy">Choose</option>
+                        <option value="10:00 AM">10:00 AM</option>
+                        <option value="12:00 PM">12:00 PM</option>
+                        <option value="02:00 PM">02:00 PM</option>
+                        <option value="04:00 PM">04:00 PM</option>
+                        <option value="06:00 PM">06:00 PM</option>
+                        <option value="08:00 PM">08:00 PM</option>
+                        <option value="10:00 PM">10:00 PM</option>
+                    </select>
+                </div>
+            </div>
+            <div class="lab-img">
+                <img src="PicsRelatedToHtmlHandsOn/Images/Lab-Test/lab-test.jpg" alt="Image Description">
+            </div>
+        </div>
+        <div class="final-btns">
+            <button id="btn-reset" type="reset" value="reset">Reset</button>
+            <button id="btn-submit" type="submit" value="submit" onclick="return Validate()" method="post">Submit</button>
+        </div>
+    </form>
+    <script>
+        function Validate() {
+            if (!validateForm()) {
+                alert("Choose the Test Type: Check atleast one box without fail!");
+                return false;
+            }
+            alert("Lab test form submitted successfully! Tab will close automatically.");
+        }
+        function validateForm() {
+            var checks = document.getElementsByTagName('input');
+            for (var i = 0; i < checks.length; i++) {
+                if (checks[i].type == 'checkbox') {
+                    if (checks[i].checked) { return true }
+                }
+            }
+            return false;
+        }
+    </script>
+</body>
+
+</html>
